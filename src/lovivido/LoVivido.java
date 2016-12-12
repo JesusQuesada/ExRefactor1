@@ -10,28 +10,28 @@ public class LoVivido {
 
     public static void main(String[] args) {
         //Hago un formateo de código con 'Source -> Format'
-        String n;
-        String e;
+        String nombre; //cambio de nombre de variable marcando la variable y botón derecho 'Refactor -> Rename'
+        String edad; //cambio de nombre de variable marcando la variable y botón derecho 'Refactor -> Rename'
 
-        int m;
-        int d;
-        int h;
-        int a;
+        int mes; //cambio de nombre de variable marcando la variable y botón derecho 'Refactor -> Rename'
+        int dia; //cambio de nombre de variable marcando la variable y botón derecho 'Refactor -> Rename'
+        int hora; //cambio de nombre de variable marcando la variable y botón derecho 'Refactor -> Rename'
+        int año; //cambio de nombre de variable marcando la variable y botón derecho 'Refactor -> Rename'
 
-        n = JOptionPane.showInputDialog("Escriba su nombre: ");
-        e = JOptionPane.showInputDialog("Escriba su edad: ");
+        nombre = JOptionPane.showInputDialog("Escriba su nombre: ");
+        edad = JOptionPane.showInputDialog("Escriba su edad: ");
 
-        a = Integer.parseInt(e);
+        año = Integer.parseInt(edad);
 
-        m = (a * 12);
-        d = (a * 365);
-        h = (d * 24);
+        mes = (año * 12);
+        dia = (año * 365);
+        hora = (dia * 24);
 
-        JOptionPane.showMessageDialog(null, "Meses: " + m, "Numero de meses vividos de " + n, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Meses: " + mes, "Numero de meses vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE);
 
-        JOptionPane.showMessageDialog(null, "Días: " + d, "Numero de días vividos de " + n, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Días: " + dia, "Numero de días vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE);
 
-        JOptionPane.showMessageDialog(null, "Horas: " + h, "Numero de horas vividos de " + n, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Horas: " + hora, "Numero de horas vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE);
 
         System.exit(0);
 
